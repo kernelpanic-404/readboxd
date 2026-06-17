@@ -33,13 +33,18 @@ body {
     min-height: 100vh;
 }
 
+/* Header fixado em 1024px e centralizado */
 header {
     background-color: var(--bg-dark);
     color: var(--color-accent);
     text-align: center;
     padding: 1.5rem;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
+/* Container principal fixado em 1024px e centralizado */
 .container {
     flex: 1;
     display: flex;
@@ -47,6 +52,8 @@ header {
     gap: 1.5rem;
     padding: 1rem;
     width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 .card-area {
@@ -230,6 +237,7 @@ button {
 .btn-edit { background-color: var(--color-edit); }
 .btn-delete { background-color: var(--color-danger); }
 
+/* Footer fixado em 1024px e centralizado */
 footer {
     background-color: var(--bg-dark);
     color: #999;
@@ -237,6 +245,10 @@ footer {
     padding: 1.2rem;
     font-size: 0.85rem;
     margin-top: auto;
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ==========================================
@@ -354,5 +366,5 @@ footer {
 }
 
 @media (min-width: 1024px) {
-    .book-card { width: calc(33.333% - 0.8rem); } /* 3 livros por linha no PC */
+    .book-card { width: calc(33.333% - 0.8rem); } /* 3 livros por linha no PC dentro dos 1024px */
 }
